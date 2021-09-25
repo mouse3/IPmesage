@@ -11,7 +11,7 @@ def Publico():
     
         socketServidor.bind(dataConection) #Asignamos los valores del servidor
         socketServidor.listen(conexionesMaximas) #Asignamos el número máximo de conexiones
-        print("Esperando conexiones en %s:%s" %(ip, puerto))
+        print("escuchando conexiones en %s:%s" %(ip, puerto))
         cliente, direccion = socketServidor.accept()
         print("Conexion establecida con %s:%s" %(direccion[0], direccion[1]))
         while True:
