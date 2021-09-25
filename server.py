@@ -13,7 +13,7 @@ import socket #utilidades de red y conexion
 #temporal
 print("0.0.0.0:9797")
 ip = input("direccion del servidor:")
-purto = input("puerto del servidor:")
+puerto = input("puerto del servidor:")
 conexionesMaximas = input("conexiones maximas:")
 dataConection = (ip, puerto)
 conexionesMaximas = 5 #Podrán conectarse 5 clientes como máximo
