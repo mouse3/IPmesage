@@ -3,7 +3,8 @@ def Publico():
         print("0.0.0.0:9797")
         ip = "0.0.0.0"
         puerto = 9797
-        conexionesMaximas = input("conexiones maximas:")
+        dataConection = (ip, puerto)
+        conexionesMaximas = 5
         dataConection = (ip, puerto)
         conexionesMaximas = 5 #Podrán conectarse 5 clientes como máximo
         socketServidor = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
