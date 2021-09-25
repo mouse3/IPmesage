@@ -14,7 +14,7 @@ cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 cliente.connect((ipServidor, puertoServidor))
 print("Conectado con el servidor ---> %s:%s" %(ipServidor, puertoServidor))
 while True:
-    msg = raw_input("> ")
+    msg = input("> ")
     cliente.send(msg)
     respuesta = cliente.recv(4096)
     print(respuesta)
