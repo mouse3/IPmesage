@@ -46,7 +46,8 @@ def Privado():
                 cliente.sendall("-- Recibido --")
                 print("------- CONEXIÓN CERRADA ---------")
                 socketServidor.close()
-
+print("1 --> servidor privado")
+print("2 --> servidor publico")
 option = input("-->>")
 if option == "1":
     Privado()
