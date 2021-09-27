@@ -1,7 +1,6 @@
 import socket #utilidades de red y conexion
 
 #Definimos parámetros necesarios por defeccto
-def server():
     ip = "0.0.0.0"
     puerto = 9797
     d = (ip, puerto)
