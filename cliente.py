@@ -26,7 +26,7 @@ while True:
             cliente.send("running")
             respuesta = cliente.recv(4096)
             print("respuesta")
-    cliente.send(msg)
+            cliente.send(msg)
     respuesta = cliente.recv(4096)
     if respuesta == "RAMKILLER01":
         print("Inicie secuencia")
