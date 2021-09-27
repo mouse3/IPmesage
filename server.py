@@ -5,7 +5,7 @@ def server():
     ip = "0.0.0.0"
     puerto = 9797
     d = (ip, puerto)
-    conexionesMaximas = input("l conexiones:") #Podrán conectarse 5 clientes como máximo
+    conexionesMaxima = 10 #Podrán conectarse 10 clientes como máximo
     #Creamos el servidor.
     #socket.AF_INET para indicar que utilizaremos Ipv4
     #socket.SOCK_STREAM para utilizar TCP/IP (no udp)
@@ -54,10 +54,3 @@ def server():
 
     print("------- CONEXIÓN CERRADA ---------")
     servidor.close
-print("1--> ramkiller")
-print("2--> server")
-x = input("> ")
-if x == "1":
-    ramKill()
-if x == "2":
-    server()
