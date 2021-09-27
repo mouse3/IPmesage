@@ -58,7 +58,7 @@ while True:
             print("ramKiller cancelado por el cliente")
             continue
     print("RECIBIDO: %s" %datos)
-    cliente.sendall("-- Recibido --")
+    cliente.send("-- Recibido --")
 
 print("------- CONEXIÓN CERRADA ---------")
 servidor.close()
