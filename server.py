@@ -1,23 +1,4 @@
 import socket #utilidades de red y conexion
-
-#Definimos parámetros necesarios por defeccto
-  # bytes object
-  b = b"example"
- 
-  # str object
-  s = "example"
- 
-  # str to bytes
-  s=bytes(s, encoding = "utf8")
- 
-  # bytes to str
-  b=str(b, encoding = "utf-8")
- 
-  # an alternative method
-  # str to bytes
-  str.encode(s)
- 
-  # bytes to str
 ip = "0.0.0.0"
 puerto = 9797
 d = (ip, puerto)
