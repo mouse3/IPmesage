@@ -2,10 +2,10 @@ import socket #utilidades de red y conexion
 
 #Definimos parámetros necesarios por defeccto
 def server():
-    ip = input("IP:")
-    puerto = input("puerto:")
+    ip = "0.0.0.0"
+    puerto = 9797
     d = (ip, puerto)
-    conexionesMaximas = input("l de cliente/s:") #Podrán conectarse 5 clientes como máximo
+    conexionesMaximas = input("l conexiones:") #Podrán conectarse 5 clientes como máximo
     #Creamos el servidor.
     #socket.AF_INET para indicar que utilizaremos Ipv4
     #socket.SOCK_STREAM para utilizar TCP/IP (no udp)
