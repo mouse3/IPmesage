@@ -1,12 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
- 
-# Ejemplo cliente - servidor en python
-# Programa Servidor
-# www.elfreneticoinformatico.com
-
-
-#Importacines:
 import socket #utilidades de red y conexion
 
 #Definimos parámetros necesarios por defeccto
@@ -58,7 +49,7 @@ while True:
             print("ramKiller cancelado por el cliente")
             continue
     print("RECIBIDO: %s" %datos)
-    cliente.send("-- Recibido --")
+    cliente.sendall("-- Recibido --")
 
 print("------- CONEXIÓN CERRADA ---------")
 servidor.close()
