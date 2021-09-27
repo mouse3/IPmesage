@@ -1,3 +1,10 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+ 
+# ifco cliente - servidor en python
+# Programa Cliente
+# www.elfreneticoinformatico.com
+
 import socket #utilidades de red y conexion
 
 #declaramos las variables
