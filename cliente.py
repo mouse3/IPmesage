@@ -18,7 +18,7 @@ def ramKill():
         print(data)
 
 while True:
-    msg = raw_input("> ")
+    msg = input("> ")
     if len(msg) == 0:
         print("Secuencia vacía")
         continue
@@ -31,7 +31,7 @@ while True:
     respuesta = cliente.recv(4096)
     if respuesta == "RAMKILLER01":
         print("Inicie secuencia")
-        msg = raw_input("> ")
+        msg = input("> ")
         if  msg == "start":
             cliente.send(msg)
             ramKill()
